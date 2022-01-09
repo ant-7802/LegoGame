@@ -33,7 +33,7 @@ TextBox.TextSize = 14.000
 
 -- Scripts:
 
-local function DMHMYO_fake_script() -- Frame.LocalScript 
+local function PTILT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
@@ -130,7 +130,8 @@ local function DMHMYO_fake_script() -- Frame.LocalScript
 													textbox.Text = ""
 													script.Parent.Visible = false
 													if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
-														loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+															loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+	
 													else
 	
 														if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
@@ -152,31 +153,42 @@ local function DMHMYO_fake_script() -- Frame.LocalScript
 															}
 	
 															loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
-															loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+																loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+													else
+														if textbox.Text == ";nep" then
+															textbox.Text = ""
+															script.Parent.Visible = false
+															if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
+																loadstring(game:HttpGet('https://raw.githubusercontent.com/specowos/CONVERTWARE/main/convertware/Scripts/Converted/Neptunian%20V%20Convert.lua',true))()
+	
+															else
+	
+																if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
+																	loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/LegoGame/main/thing.lua',true))()
+																	
+																else
+																	loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
+																	_G.MiztReanimSettings = {
+																		PermanentDeath = true,
+																		NoHeadPermanentDeath = false,
+																		Noclip = true,
+																		HatReanimate = false,
+																		SemiHatReanimate = false,
+																		UseMizaruTorso = false,
+																		FlingActive = false,
+																		AlignMethod = true,
+																		Netless = true,
+																		ActiveLegacyNet = true,
+																		NetlessVelocity = {0,0,-50}
+																	}
+	
+																	loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
+																	loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+																	end
+																--
 														end
 													end
-												else
-													if textbox.Text == ";nep" then
-														textbox.Text = ""
-														script.Parent.Visible = false
-														if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
-															loadstring(game:GetObjects("rbxassetid://8495802410")[1].Source)()
-														else
 	
-															if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
-																loadstring(game:GetObjects("rbxassetid://8495808039")[1].Source)()
-															else
-																loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
-																loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/real/main/oldpdeath.lua"))()
-																loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
-														end
-														
-														
-														end
-														
-														
-														
-												end
 						end
 									end
 							end
@@ -194,4 +206,4 @@ local function DMHMYO_fake_script() -- Frame.LocalScript
 		end)
 	
 end
-coroutine.wrap(DMHMYO_fake_script)()
+coroutine.wrap(PTILT_fake_script)()
