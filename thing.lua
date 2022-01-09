@@ -33,9 +33,10 @@ TextBox.TextSize = 14.000
 
 -- Scripts:
 
-local function IZHM_fake_script() -- Frame.LocalScript 
+local function DMHMYO_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
+	
 	local Player = game.Players.LocalPlayer
 	local Mouse = Player:GetMouse()
 	local textbox = script.Parent.TextBox
@@ -44,7 +45,7 @@ local function IZHM_fake_script() -- Frame.LocalScript
 		if K == ";" then
 			script.Parent.Visible = true
 			textbox:CaptureFocus()
-			
+	
 			textbox.FocusLost:Connect(function(enterPressed)
 				if enterPressed then
 					if textbox.Text == ";r6" then
@@ -65,7 +66,7 @@ local function IZHM_fake_script() -- Frame.LocalScript
 						}
 	
 						loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
-						
+	
 					else
 						if textbox.Text == ";re" then
 							textbox.Text = ""
@@ -76,102 +77,107 @@ local function IZHM_fake_script() -- Frame.LocalScript
 							loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
 						else
 							if textbox.Text == ";netless" then
-								script.Parent.Visible = false
 								textbox.Text = ""
-								
+								script.Parent.Visible = false
+	
+	
 								loadstring(game:GetObjects("rbxassetid://8495654667")[1].Source)()
-								
+	
 							else
 								if textbox.Text == ";r6perm" then
-								loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
-									script.Parent.Visible = false
 									textbox.Text = ""
-								_G.MiztReanimSettings = {
-									PermanentDeath = true,
-									NoHeadPermanentDeath = false,
-									Noclip = true,
-									HatReanimate = false,
-									SemiHatReanimate = false,
-									UseMizaruTorso = false,
-									FlingActive = false,
-									AlignMethod = true,
-									Netless = true,
-									ActiveLegacyNet = true,
-									NetlessVelocity = {0,0,-50}
-								}
+									script.Parent.Visible = false
+									loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
+									_G.MiztReanimSettings = {
+										PermanentDeath = true,
+										NoHeadPermanentDeath = false,
+										Noclip = true,
+										HatReanimate = false,
+										SemiHatReanimate = false,
+										UseMizaruTorso = false,
+										FlingActive = false,
+										AlignMethod = true,
+										Netless = true,
+										ActiveLegacyNet = true,
+										NetlessVelocity = {0,0,-50}
+									}
 	
-								loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
-							else
-								if textbox.Text == ";dex" then
-										script.Parent.Visible = false
+									loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
+								else
+									if textbox.Text == ";dex" then
 										textbox.Text = ""
-									loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
-									else--
-									if textbox.Text == ";oldr6" then
-											script.Parent.Visible = false
+										script.Parent.Visible = false
+										loadstring(game:HttpGetAsync("https://pastebin.com/raw/fPP8bZ8Z"))()
+									else
+										if textbox.Text == ";nonet" then
 											textbox.Text = ""
+											script.Parent.Visible = false
+											game.Workspace.FallenPartsDestroyHeight = math.huge
+										else
+										if textbox.Text == ";oldr6" then
+											textbox.Text = ""
+											script.Parent.Visible = false
 											loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
 	
-										loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/real/main/oldpdeath.lua"))()
-									else
-									if textbox.Text == ";f3x" then
-												script.Parent.Visible = false
+											loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/real/main/oldpdeath.lua"))()
+										else
+											if textbox.Text == ";f3x" then
 												textbox.Text = ""
-										loadstring(game:GetObjects("rbxassetid://1059691823")[1].Source)()
-									else
-										if textbox.Text == ";sonic" then
-													script.Parent.Visible = false
-													textbox.Text = ""
-											if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
-												loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+												script.Parent.Visible = false
+												loadstring(game:GetObjects("rbxassetid://1059691823")[1].Source)()
 											else
+												if textbox.Text == ";sonic" then
+													textbox.Text = ""
+													script.Parent.Visible = false
+													if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
+														loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+													else
 	
-												if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
-													loadstring(game:GetObjects("rbxassetid://8495591452")[1].Source)()
+														if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
+															loadstring(game:GetObjects("rbxassetid://8495591452")[1].Source)()
 														else
 															loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
-													_G.MiztReanimSettings = {
-														PermanentDeath = true,
-														NoHeadPermanentDeath = false,
-														Noclip = true,
-														HatReanimate = false,
-														SemiHatReanimate = false,
-														UseMizaruTorso = false,
-														FlingActive = false,
-														AlignMethod = true,
-														Netless = true,
-														ActiveLegacyNet = true,
-														NetlessVelocity = {0,0,-50}
-													}
+															_G.MiztReanimSettings = {
+																PermanentDeath = true,
+																NoHeadPermanentDeath = false,
+																Noclip = true,
+																HatReanimate = false,
+																SemiHatReanimate = false,
+																UseMizaruTorso = false,
+																FlingActive = false,
+																AlignMethod = true,
+																Netless = true,
+																ActiveLegacyNet = true,
+																NetlessVelocity = {0,0,-50}
+															}
 	
-													loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
-													loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
-												end
+															loadstring(game:HttpGet('https://raw.githubusercontent.com/Sylixe/Scripts/main/MiztReanimate.lua',true))()
+															loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
+														end
 													end
+												else
 													if textbox.Text == ";nep" then
-														script.Parent.Visible = false
 														textbox.Text = ""
+														script.Parent.Visible = false
 														if game.Players.LocalPlayer.Character:FindFirstChild("Dummy") then
-	
-																loadstring(game:GetObjects("rbxassetid://8495802410")[1].Source)()
-																game:GetService("StarterGui"):SetCore("SendNotification", { 
-																	Title = "Notification";
-																	Text = "Use Permadeath!";
-																	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-																    Duration = 16;
-	
+															loadstring(game:GetObjects("rbxassetid://8495802410")[1].Source)()
 														else
 	
 															if game.Players.LocalPlayer.Character:FindFirstChild("Reanimate") then
 																loadstring(game:GetObjects("rbxassetid://8495808039")[1].Source)()
 															else
+																loadstring(game:GetObjects("rbxassetid://8495670072")[1].Source)()
 																loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/real/main/oldpdeath.lua"))()
-																
-																loadstring(game:GetObjects("rbxassetid://8495808039")[1].Source)()
-															end
+																loadstring(game:GetObjects("rbxassetid://8495607794")[1].Source)()
 														end
-														else
-						
+														
+														
+														end
+														
+														
+														
+												end
+						end
 									end
 							end
 							end
@@ -183,10 +189,9 @@ local function IZHM_fake_script() -- Frame.LocalScript
 					end
 					end
 					end
-					end
 			end)
 			end
 		end)
 	
 end
-coroutine.wrap(IZHM_fake_script)()
+coroutine.wrap(DMHMYO_fake_script)()
