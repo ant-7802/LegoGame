@@ -34,7 +34,7 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function RDMHFXS_fake_script() -- TextButton.LocalScript 
+local function UODKEDJ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -45,25 +45,26 @@ local function RDMHFXS_fake_script() -- TextButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(RDMHFXS_fake_script)()
-local function VHWRDJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(UODKEDJ_fake_script)()
+local function FNXVD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait(0.01) do
-		if script.Parent.Text == "Mizt Duper - On" then
-			function sussy()
-			game.Players:Chat("-re")
-			wait(0.3)
-			game.Players.LocalPlayer.Backpack.BoomBox.Parent = game.Players.LocalPlayer.Character
+		if script.Parent.Text == "Baseplate Duper - On" then
+	
+	function sussy()
+				game.Players:Chat("-re")
+				wait(0.3)
+				game.Players.LocalPlayer.Backpack.BoomBox.Parent = game.Players.LocalPlayer.Character
 				game.Players.LocalPlayer.Character.BoomBox.Parent = workspace
 			end
-			
 			pcall(sussy)
+	
 		else
-			
+	
 		end
 		end
 	
 	
 end
-coroutine.wrap(VHWRDJ_fake_script)()
+coroutine.wrap(FNXVD_fake_script)()
