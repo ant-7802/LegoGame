@@ -7,6 +7,7 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local SwordDuper = Instance.new("TextButton")
 local BoomboxDuper = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
 
 --Properties:
 
@@ -19,7 +20,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
 Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0916271731, 0, 0.525761068, 0)
-Frame.Size = UDim2.new(0, 186, 0, 152)
+Frame.Size = UDim2.new(0, 186, 0, 218)
 
 SwordDuper.Name = "Sword Duper"
 SwordDuper.Parent = Frame
@@ -38,7 +39,7 @@ BoomboxDuper.Name = "Boombox Duper"
 BoomboxDuper.Parent = Frame
 BoomboxDuper.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
 BoomboxDuper.BorderSizePixel = 0
-BoomboxDuper.Position = UDim2.new(0, 0, 0.56612128, 0)
+BoomboxDuper.Position = UDim2.new(0, 0, 0.469790995, 0)
 BoomboxDuper.Size = UDim2.new(0, 186, 0, 53)
 BoomboxDuper.Font = Enum.Font.SourceSans
 BoomboxDuper.Text = "Boombox Duper - Off"
@@ -47,9 +48,23 @@ BoomboxDuper.TextScaled = true
 BoomboxDuper.TextSize = 14.000
 BoomboxDuper.TextWrapped = true
 
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
+TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0, 0, 0.770642221, 0)
+TextBox.Size = UDim2.new(0, 186, 0, 50)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "0.1"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
 -- Scripts:
 
-local function KFRUJ_fake_script() -- SwordDuper.LocalScript 
+local function BUJR_fake_script() -- SwordDuper.LocalScript 
 	local script = Instance.new('LocalScript', SwordDuper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -60,8 +75,8 @@ local function KFRUJ_fake_script() -- SwordDuper.LocalScript
 	end)
 	
 end
-coroutine.wrap(KFRUJ_fake_script)()
-local function FEQUU_fake_script() -- SwordDuper.LocalScript 
+coroutine.wrap(BUJR_fake_script)()
+local function ARFXDLA_fake_script() -- SwordDuper.LocalScript 
 	local script = Instance.new('LocalScript', SwordDuper)
 
 	while wait(0.01) do
@@ -69,7 +84,8 @@ local function FEQUU_fake_script() -- SwordDuper.LocalScript
 	
 	function sussy()
 				game.Players:Chat("-re")
-				wait(0.15)
+				local waiting = script.Parent.Parent.TextBox.Text
+				wait(waiting)
 				game.Players.LocalPlayer.Backpack.Foil.Parent = game.Players.LocalPlayer.Character
 				game.Players.LocalPlayer.Character.Foil.Parent = workspace
 			end
@@ -82,8 +98,8 @@ local function FEQUU_fake_script() -- SwordDuper.LocalScript
 	
 	
 end
-coroutine.wrap(FEQUU_fake_script)()
-local function YSSQCU_fake_script() -- Frame.Dragify 
+coroutine.wrap(ARFXDLA_fake_script)()
+local function AHBXPR_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService("UserInputService")
@@ -124,8 +140,8 @@ local function YSSQCU_fake_script() -- Frame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(YSSQCU_fake_script)()
-local function TDZVI_fake_script() -- BoomboxDuper.LocalScript 
+coroutine.wrap(AHBXPR_fake_script)()
+local function ZKHG_fake_script() -- BoomboxDuper.LocalScript 
 	local script = Instance.new('LocalScript', BoomboxDuper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -136,8 +152,8 @@ local function TDZVI_fake_script() -- BoomboxDuper.LocalScript
 	end)
 	
 end
-coroutine.wrap(TDZVI_fake_script)()
-local function MCRFWR_fake_script() -- BoomboxDuper.LocalScript 
+coroutine.wrap(ZKHG_fake_script)()
+local function HDLPA_fake_script() -- BoomboxDuper.LocalScript 
 	local script = Instance.new('LocalScript', BoomboxDuper)
 
 	while wait(0.01) do
@@ -145,7 +161,8 @@ local function MCRFWR_fake_script() -- BoomboxDuper.LocalScript
 	
 	function sussy()
 				game.Players:Chat("-re")
-				wait(0.15)
+				local waiting = script.Parent.Parent.TextBox.Text
+				wait(waiting)
 				game.Players.LocalPlayer.Backpack.BoomBox.Parent = game.Players.LocalPlayer.Character
 				game.Players.LocalPlayer.Character.BoomBox.Parent = workspace
 			end
@@ -158,4 +175,4 @@ local function MCRFWR_fake_script() -- BoomboxDuper.LocalScript
 	
 	
 end
-coroutine.wrap(MCRFWR_fake_script)()
+coroutine.wrap(HDLPA_fake_script)()
