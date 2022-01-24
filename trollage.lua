@@ -41,11 +41,8 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer('                                                                               ','All')
 for i,v in pairs(game.Players:GetChildren())do
 	game:GetService("TeleportService"):Teleport(game.PlaceId,game.Players.LocalPlayer)
-		game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
-    if State == Enum.TeleportState.Started then
-        syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/LegoGame/main/trollage.lua'))()")
-    end
-end)
+
+
 end
 end
 
