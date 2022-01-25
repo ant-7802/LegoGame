@@ -39,9 +39,8 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer('                                                                               ','All')
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer('                                                                               ','All')
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer('                                                                               ','All')
-
-
-
+for i,v in pairs(game.Players:GetChildren())do
+game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
 end
-
+end
 
